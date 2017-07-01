@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.shadow.iao_vote">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/app"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+
+        <activity android:name=".LoginActivity"
+            android:configChanges="orientation|screenSize">
+
+        </activity>
+
+        <activity
+            android:name="com.example.shadow.iao_vote.Lctivity"
+            android:label="@string/app_name"
+            android:configChanges="orientation|screenSize">
+
+        </activity>
+
+
+        <activity
+            android:name="com.example.shadow.iao_vote.Statistique"
+            android:label="@string/app_name"
+            android:configChanges="orientation|screenSize">
+
+        </activity>
+
+
+        <activity
+            android:name="com.example.shadow.iao_vote.Loading"
+            android:label="@string/app_name"
+            android:configChanges="orientation|screenSize">
+
+        </activity>
+
+        <activity
+            android:name="com.example.shadow.iao_vote.Loading_Candidats"
+            android:label="@string/app_name"
+            android:configChanges="orientation|screenSize">
+
+        </activity>
+
+        <activity
+            android:name="com.example.shadow.iao_vote.Candidats"
+            android:label="@string/app_name"
+            android:configChanges="orientation|screenSize">
+
+        </activity>
+
+
+        <activity
+            android:name="com.example.shadow.iao_vote.Vote"
+            android:label="@string/app_name"
+            android:configChanges="orientation|screenSize">
+
+        </activity>
+
+        <activity
+            android:name="com.example.shadow.iao_vote.Stat_elections"
+            android:label="@string/app_name"
+            android:configChanges="orientation|screenSize">
+
+        </activity>
+
+
+        <activity
+            android:name="com.example.shadow.iao_vote.Stat_candidats"
+            android:label="@string/app_name"
+            android:configChanges="orientation|screenSize">
+
+        </activity>
+
+
+        <activity
+            android:name="com.example.shadow.iao_vote.Stat_elections_list"
+            android:label="@string/app_name"
+            android:configChanges="orientation|screenSize">
+
+        </activity>
+
+
+
+
+
+
+        <activity
+            android:name="com.example.shadow.iao_vote.Welcome"
+            android:label="@string/app_name"
+            android:configChanges="orientation|screenSize" >
+
+
+
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+    </application>
+
+</manifest>

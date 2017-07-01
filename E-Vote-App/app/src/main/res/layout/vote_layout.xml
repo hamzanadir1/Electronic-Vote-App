@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingTop="0dp"
+    android:paddingBottom="10dp">
+
+
+    <Button android:layout_width="130dp"
+        android:layout_height="38dp"
+        android:layout_gravity="center_horizontal"
+        android:text="voter"
+        android:textColor="#fff"
+        android:textSize="13dp"
+        android:background="#13b586"
+        android:id="@+id/buttonVote"
+        android:layout_marginRight="12dp"
+        android:layout_marginEnd="12dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:ems="10"
+        android:id="@+id/d"
+        android:text="Description  :"
+        android:textSize="22sp"
+        android:textColor="#000000"
+        android:textStyle="normal|italic"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/nom"
+        android:layout_toLeftOf="@+id/logo"
+        android:layout_toStartOf="@+id/logo" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="#13b586"
+        android:orientation="horizontal"
+        android:id="@+id/green_layout"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+
+        <ImageView android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@mipmap/tu"
+            android:id="@+id/power_button2"
+            />
+
+        <TextView android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Candidat Choisi"
+            android:textColor="#ffffff"
+            android:layout_marginLeft="90dp"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_gravity="center_horizontal|center_vertical"/>
+
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="48dp"
+            android:gravity="right"
+            android:orientation="horizontal" >
+
+            <ImageView android:layout_width="55dp"
+                android:layout_height="match_parent"
+                android:background="@mipmap/power"
+                android:id="@+id/power_button"
+
+
+                />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <TextView
+        android:text="date de fin   :"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/dad"
+        android:textSize="21dp"
+        android:textColor="#000000"
+        android:textStyle="normal|italic"
+        android:layout_above="@+id/buttonVote"
+        android:layout_alignLeft="@+id/d"
+        android:layout_alignStart="@+id/d" />
+
+    <TextView
+        android:text="Nom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/nom"
+        android:textColor="#13b586"
+        android:fontFamily="sans-serif"
+        android:textSize="24sp"
+        android:textStyle="normal|bold"
+        android:layout_marginLeft="31dp"
+        android:layout_marginStart="31dp"
+        android:layout_below="@+id/green_layout"
+        android:layout_toRightOf="@+id/dad"
+        android:layout_toEndOf="@+id/dad"
+        android:layout_marginTop="20dp" />
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:contentDescription="Property Image"
+        android:layout_below="@+id/d"
+        android:layout_alignRight="@+id/buttonVote"
+        android:layout_alignEnd="@+id/buttonVote"
+        android:layout_marginTop="22dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textMultiLine"
+        android:ems="10"
+        android:layout_marginTop="19dp"
+        android:id="@+id/description"
+        android:text="Descr"
+        android:background="@drawable/border"
+        android:textSize="18dp"
+        android:gravity="center"
+        android:textStyle="normal|italic"
+        android:layout_alignTop="@+id/logo"
+        android:layout_toLeftOf="@+id/buttonVote"
+        android:layout_toStartOf="@+id/buttonVote" />
+
+    <TextView
+        android:text="DD"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/date"
+        android:textSize="20sp"
+        android:textColor="@color/trans_red"
+        android:textStyle="normal|italic"
+        android:layout_alignParentBottom="true"
+        android:layout_alignLeft="@+id/description"
+        android:layout_alignStart="@+id/description"
+        android:layout_marginLeft="40dp"
+        android:layout_marginStart="40dp" />
+
+
+</RelativeLayout>

@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">IAO_VOTE</string>
+    <string name="ip">http://172.20.10.8/</string>
+    <string name="key">2356a3a42ba5781f80a72dad3f90aeee8ba93c7637aaf218a8b8c18c</string>
+</resources>
